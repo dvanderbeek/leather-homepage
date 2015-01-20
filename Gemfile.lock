@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/dvanderbeek/leather.git
-  revision: c963db24d6edb811b8f00b4c2ad91649662f727c
+  revision: 51937f019ab17ad8caea6326bef739c3e2dd127a
   branch: master
   specs:
     leather (3.3.3)
