@@ -1,2 +1,62 @@
-.container
-  %h1 Home
+= content_for :body_class do
+  = "bg-gray-lighter container-lg"
+
+.jumbotron.relative.no-margin.text-white{style: "height: 700px;"}
+  .abs-cover.hero24
+  .vertical-center.text-center
+    .text-shadowed
+      %h1.text-lighter Leather
+      %p.text-lighter Jumpstart Your Rails + Bootstrap App
+    / = link_to "Learn More", "", class: "btn btn-lg no-radius btn-primary"
+
+%section.bg-white.text-center.cta
+  .container
+    %h2.text-primary.text-light Browse the Code
+    = link_to "http://www.github.com/dvanderbeek/leather", class: "btn btn-primary btn-lg text-white no-radius btn-outline" do
+      %i.fa.fa-github
+      Github
+
+
+%section.bg-gray-lightest.relative.image-block
+  .image.image-right.col-sm-5.col-md-6
+    .abs-cover.hero24
+  .container
+    .row
+      .col-sm-7.col-md-5
+        .image-block-copy
+          %h2.no-margin.text-lighter UI Kit
+          %p.text-muted Encourage consistent styles across your app. Leather gives you a UI Kit page where you can make sure your styles work across Bootstrap’s components.
+          = link_to "Learn More", leather.ui_kit_path, class: "btn no-radius btn-primary"
+
+%section.bg-gray-lightest.relative.image-block
+  .image.image-left.col-sm-5.col-md-6
+    .abs-cover.hero24
+  .container
+    .row
+      .col-sm-7.col-md-5.col-md-offset-7.col-sm-offset-5
+        .image-block-copy
+          %h2.no-margin.text-lighter Components
+          %p.text-muted Leather adds useful components to the default set provided by Bootstrap. We are also building a library of partials and helpers to make it easier to use common components with complex markup like modals and navbars.
+          = link_to "Learn More", leather.components_path, class: "btn no-radius btn-primary"
+
+%section.bg-gray-lightest.relative.image-block
+  .image.image-right.col-sm-5.col-md-6
+    .abs-cover.hero24
+  .container
+    .row
+      .col-sm-7.col-md-5
+        .image-block-copy
+          %h2.no-margin.text-lighter Layout Templates
+          %p.text-muted Using Leather components, we’ve built some full-screen layouts that work well for responsive applications. Simple markup and no extra styles – just the framework you need to create a great app. And we used CSS transitions to reduce the need for added javascript.
+          = link_to "Learn More", leather.admin_layout_path, class: "btn no-radius btn-primary"
+
+%section.bg-gray-lightest.relative.image-block
+  .image.image-left.col-sm-5.col-md-6
+    .abs-cover.hero24
+  .container
+    .row
+      .col-sm-7.col-md-5.col-md-offset-7.col-sm-offset-5
+        .image-block-copy
+          %h2.no-margin.text-lighter Devise Views
+          %p.text-muted Leather also gives you a set of views for Devise so your user authentication pages look good from the start, letting you worry about those details once the core of your app is built.
+          = link_to "Learn More", new_user_session_path, class: "btn no-radius btn-primary"
