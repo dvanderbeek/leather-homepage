@@ -12,6 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
-//=require leather
+//= require bootstrap-sprockets
+//= require leather
 //= require_tree .
