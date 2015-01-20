@@ -1,4 +1,7 @@
 en:
+  titles:
+    application: 'Leather - Useful tools for building with Bootstrap'
+
   date:
     formats:
       default: '%m/%d/%Y'
